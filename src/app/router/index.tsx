@@ -39,6 +39,7 @@ const router = createBrowserRouter(
     },
   ],
   {
+    basename: import.meta.env.BASE_URL,
     future: {
       v7_normalizeFormMethod: true,
     },

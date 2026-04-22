@@ -1,0 +1,53 @@
+:root {
+  /* Primary Color - Updated to #F9E400 */
+  --primary: #F9E400;
+  
+  /* Background & Surfaces */
+  --bg: #080810;
+  --surface: #0f0f1a;
+  --card: #13131f;
+  --border: #1e1e2e;
+  --border2: #2a2a3e;
+  
+  /* Accent Colors */
+  --orange: #ff6b35;
+  --blue: #4d9fff;
+  --pink: #ff4d8d;
+  --yellow: #ffe566;
+  
+  /* Text Colors */
+  --text: #f0f0f8;
+  --muted: #555570;
+  --mid: #8888aa;
+  
+  /* Default (for backward compatibility with old --green) */
+  --green: #F9E400;
+  
+  /* Typography */
+  --font-primary: 'Bricolage Grotesque', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --font-display: 'Bebas Neue', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 80px;
+  
+  /* Border Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.2s ease;
+  --transition-slow: 0.3s ease;
+  
+  /* Container Width */
+  --container-max-width: 1100px;
+}

@@ -21,6 +21,7 @@ export const useScrollToSection = (): UseScrollToSectionReturn => {
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth',
+        left: 0,
       });
     }
   }, []);

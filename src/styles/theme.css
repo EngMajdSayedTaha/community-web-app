@@ -23,6 +23,9 @@ nav {
   color: var(--primary);
   letter-spacing: -0.02em;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .nav-logo span {
@@ -896,10 +899,16 @@ section {
 
 .majd-avatar {
   position: relative;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .majd-photo-placeholder {
   width: 100%;
+  max-width: 220px;
   aspect-ratio: 1;
   background: linear-gradient(135deg, #13131f, #0f0f18);
   border: 1px solid var(--border2);
@@ -948,10 +957,12 @@ section {
 
 .majd-content .section-eyebrow {
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .majd-content .section-heading {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .majd-bio {

@@ -16,10 +16,18 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
           {/* Avatar */}
           <div className="md:col-span-1 flex justify-center">
-            <div className="w-48 h-48 rounded-full bg-gradient-to-br from-primary to-yellow-500 flex items-center justify-center text-6xl shadow-lg">
-              👨‍💻
-            </div>
-          </div>
+                    <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+                      <img
+                        src="/images/profile.jpg"
+                        alt="Majd"
+                        onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+                        className="profile-avatar-large w-full h-full object-cover"
+                      />
+                      <span className="text-6xl" style={{ display: 'none' }} aria-hidden>
+                        👨‍💻
+                      </span>
+                    </div>
+                  </div>
 
           {/* Content */}
           <div className="md:col-span-2 space-y-6">

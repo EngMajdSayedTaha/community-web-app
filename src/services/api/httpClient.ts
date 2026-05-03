@@ -204,11 +204,10 @@ class HttpClient {
     }
 
     if (typeof error === 'object' && error !== null) {
-      const errorObj = error as Record<string, unknown>;
-      if (errorObj.status && errorObj.data) {
-        return new Error(
-          String(errorObj.data?.message || `HTTP Error ${errorObj.status}`)
-        );
+      const errorObj = error as { status?: unknown; data?: unknown };
+      if (errorObj.status && errorObj.data && typeof errorObj.data === 'object') {
+        const data = errorObj.data as { message?: unknown };
+        return new Error(String(data.message ?? `HTTP Error ${errorObj.status}`));
       }
     }
 

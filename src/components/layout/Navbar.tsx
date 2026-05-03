@@ -9,8 +9,8 @@ interface NavLink {
 const NAV_LINKS: NavLink[] = [
   { label: 'Dev Cards', sectionId: 'cards', path: '/dev-cards' },
   { label: 'Challenges', sectionId: 'challenges', path: '/challenges' },
-  { label: 'About', sectionId: 'about', path: '/about' },
   { label: 'Meme Lab', sectionId: 'memes', path: '/meme-lab' },
+  { label: 'About', sectionId: 'about', path: '/about' },
 ];
 
 export default function Navbar() {
@@ -31,6 +31,12 @@ export default function Navbar() {
   return (
     <nav>
       <div className="nav-logo" onClick={handleLogoClick}>
+        <img
+          src="/images/profile.jpg"
+          alt="Majd"
+          onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+          className="profile-img w-10 h-10 inline-block mr-3"
+        />
         majdst<span>.codes</span>
       </div>
       <ul className="nav-links">

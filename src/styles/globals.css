@@ -61,3 +61,24 @@ body::after {
   background: var(--primary);
   color: #000;
 }
+
+/* Profile image helpers */
+.profile-img {
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  object-fit: cover;
+  border-radius: 9999px; /* full */
+}
+
+.profile-avatar-large {
+  width: 192px; /* 48 * 4 */
+  height: 192px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
+  display: block;
+}

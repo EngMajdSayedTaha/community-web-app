@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1]
-const base = repositoryName ? `/${repositoryName}/` : '/'
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true'
+const base = isGitHubPages && repositoryName ? `/${repositoryName}/` : '/'
 
 export default defineConfig({
   base,

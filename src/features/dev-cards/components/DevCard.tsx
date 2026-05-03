@@ -1,5 +1,4 @@
 // Individual Dev Card Component
-import { Link } from 'react-router-dom';
 import Card from '@components/common/Card';
 import type { DevCard } from '@types';
 
@@ -7,7 +6,7 @@ interface DevCardProps {
   card: DevCard;
 }
 
-const difficultyColors = {
+const difficultyColors: Record<DevCard['difficulty'], string> = {
   beginner: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
   intermediate: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
   advanced: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
@@ -61,7 +60,7 @@ const DevCard: React.FC<DevCardProps> = ({ card }) => {
         {/* Topics */}
         {card.topics && card.topics.length > 0 && (
           <div className="flex flex-wrap gap-2 mb-4">
-            {card.topics.slice(0, 3).map(topic => (
+            {card.topics.slice(0, 3).map((topic: string) => (
               <span
                 key={topic}
                 className="px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs rounded"

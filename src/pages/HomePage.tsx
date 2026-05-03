@@ -383,8 +383,14 @@ export default function HomePage() {
         <div className="majd-inner">
           <div className="majd-avatar">
             <div className="majd-photo-placeholder">
+              <img
+                src="/images/profile.jpg"
+                alt="Majd"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+                className="profile-avatar-large w-full h-full object-cover"
+              />
               <div className="majd-frame"></div>
-              <div className="majd-initials">M</div>
+              <div className="majd-initials" style={{ display: 'none' }}>M</div>
             </div>
             <div className="majd-handle">@majdst_codes</div>
           </div>

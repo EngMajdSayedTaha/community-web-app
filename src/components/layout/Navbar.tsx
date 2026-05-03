@@ -37,7 +37,7 @@ export default function Navbar() {
           onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
           className="profile-img w-10 h-10 inline-block mr-3"
         />
-        majdst<span>.codes</span>
+          majdst_codes
       </div>
       <ul className="nav-links">
         {NAV_LINKS.map((link) => (
